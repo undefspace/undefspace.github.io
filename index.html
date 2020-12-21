@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+         body {
+             background-color: black;
+             color: white;
+             font-family: sans-serif;
+         }
+
+         a {
+            color: #7fcf5a;
+         }
+
+         a:hover {
+            color: white;
+
+         }
+
+         .main {
+              text-align: center;
+         }
+
+         #menu-container {
+            display: flex;
+            position: relative;
+            flex-direction: row;
+            width: 50%;
+            left: 50%;
+            right: 50%;
+            margin-left: -110px;
+         }
+
+         .selected {
+             color: #ff5555;
+         }
+
+         .menu-item {
+            color: #fff;
+         }
+
+         .menu-item:hover {
+            color: #ff5555;
+         }
+
+         #menu-header {
+         }
+
+         #menu {
+            margin-left: 60px;
+            margin-top: 20px;
+            
+            font-family: monospace;
+            font-size: 24pt;
+            text-align: left; 
+         }
+
+         .sideline {
+            flex-grow: 1;
+         }
+
+         .content {
+            flex-grow: 2;
+            min-width: 500px;
+         }
+         
+         .contents {
+             display: flex;
+         }
+
+         img {
+             image-rendering: pixelated;
+             image-rendering: -webkit-optimize-contrast;
+             image-rendering: crisp-edges;
+         }
+
+        </style>
+        <title>undefspace</title>
+        
+        <script>
+            var canvas = document.getElementById("test")
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div id="menu-container" >
+                <h1 id="menu-header">
+                    <img src="./static/logo.svg" />
+                </h1>
+                <div id="menu">
+                    <a class="menu-item selected">[About]</a>
+                    <br><a class="menu-item">[Events]</a>
+                    <br><a href="https://t.me/undefspace" class="menu-item">[Chat]</a>
+                    <br><a href="" class="menu-item">[Donate]</a>
+                </div>
+            </div>
+            
+
+            <div class="contents">
+
+                <div class="content" id="content-about">
+                    <p>
+                        hack/rev/makerspace <a href="geo:55.75397,37.652554" title="mowmow">in the middle of moscow</a> (Воронцово поле 5-7с8, подъезд 1)
+                    </p>
+                </div>
+    
+    
+                <div class="content" id="content-events">
+                    <p>
+                        <h3>Friday, 20:00 | Routernaya</h3>
+                        That's a technical ritual involving at least one sacrificial router and several technical specialists in multitude of fields, ranging from software verification to PCB designing.
+                    </p>
+    
+                    <p>
+                        <h3>Saturday, 20:00 | Maketnaya</h3>
+                        That's a artistic ritual involving five clean tables and a wide array of painitng and manufacturing equipment.
+                    </p>
+                </div>
+    
+            </div>
+
+        </div>
+
+    </body>
+</html>
