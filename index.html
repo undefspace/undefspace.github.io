@@ -31,10 +31,6 @@
             margin-bottom: 10px;
          }
 
-         .selected {
-             color: #ff5555;
-         }
-
          .menu-item {
             color: #fff;
             text-decoration: #0000;
@@ -43,6 +39,11 @@
 
          .menu-item:hover {
             color: #ff5555;
+         }
+
+         .selected {
+
+            color: #ff8b8b;
          }
 
          #menu {
@@ -100,6 +101,11 @@
                     element.hidden = element.id != id
                 });
                 document.getElementById(id).hidden = false
+
+                [...document.getElementsByClassName("menu-item")].forEach(element => {
+                    element.classList.toggle("selected", element.hash == location.hash)
+                });
+
             }
 
             window.addEventListener('hashchange', function() {
