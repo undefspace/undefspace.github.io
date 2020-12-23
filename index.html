@@ -97,10 +97,8 @@
                     return
                 }
                 [...document.getElementsByClassName("content")].forEach(element => {
-                    console.log(element)
                     element.hidden = element.id != id
                 });
-                document.getElementById(id).hidden = false
 
                 [...document.getElementsByClassName("menu-item")].forEach(element => {
                     element.classList.toggle("selected", element.hash == location.hash)
@@ -112,8 +110,6 @@
                 switchSection("content-" + location.hash.substr(1))
                 console.log("content-" + location.hash.substr(1))
             }, false);
-
-            switchSection()
 
         </script>
     </head>
@@ -162,4 +158,7 @@
         </div>
 
     </body>
+    <script>
+        switchSection()
+    </script>
 </html>
