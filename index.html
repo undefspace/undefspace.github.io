@@ -14,21 +14,21 @@
 
          a:hover {
             color: white;
-
          }
 
          .main {
-              text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
          }
 
          #menu-container {
-            display: flex;
             position: relative;
+            display: flex;
+            justify-content: center;
             flex-direction: row;
-            left: 50%;
-            right: 50%;
-            margin-left: -110px;
-            margin-top: 60px;
+            margin-top: 150px;
+            margin-bottom: 10px;
          }
 
          .selected {
@@ -37,6 +37,8 @@
 
          .menu-item {
             color: #fff;
+            text-decoration: #0000;
+            cursor: pointer;
          }
 
          .menu-item:hover {
@@ -45,11 +47,11 @@
 
          #menu {
             margin-left: 60px;
-            margin-top: 20px;
-            
+            margin-top: 10px;
+
             font-family: monospace;
             font-size: 24pt;
-            text-align: left; 
+            text-align: left;
          }
 
          .sideline {
@@ -57,11 +59,11 @@
          }
 
          .content {
-            flex-grow: 2;
-            min-width: 500px;
-            max-width: 75%;
+            min-width: 300px;
+            max-width: 90%;
+            text-align: center;
          }
-         
+
          .contents {
              display: flex;
              flex-direction: row;
@@ -79,41 +81,59 @@
              image-rendering: crisp-edges;
          }
 
-         #content-events {
-             display: none;
-         }
-
         </style>
         <title>undefspace</title>
-        
+
         <script>
             var canvas = document.getElementById("test")
+
+            function switchSection() {
+                id = "content-" + location.hash.substr(1)
+
+                if (document.getElementById(id) == null) {
+                    console.log("what do you think you are doing?")
+                    location.hash = "about"
+                    return
+                }
+                [...document.getElementsByClassName("content")].forEach(element => {
+                    console.log(element)
+                    element.hidden = element.id != id
+                });
+                document.getElementById(id).hidden = false
+            }
+
+            window.addEventListener('hashchange', function() {
+                switchSection("content-" + location.hash.substr(1))
+                console.log("content-" + location.hash.substr(1))
+            }, false);
+
+            switchSection()
+
         </script>
     </head>
     <body>
+
         <img src="./retro/circuit.gif" style="position: absolute; scale: 20; z-index: -1; opacity: 0.05; margin-top: 200px; margin-left: 200px; filter: blur(0.4px);" />
 
 
         <div class="main">
-            
+
             <div id="menu-container" >
-                <h1 id="menu-header">
-                    <img src="./static/logo.svg" />
-                </h1>
-                <div id="menu">
-                    <a class="menu-item selected">[About]</a>
-                    <br><a class="menu-item">[Events]</a>
-                    <br><a href="https://t.me/undefspace" class="menu-item">[Chat]</a>
-                    <br><a href="https://www.tinkoff.ru/sl/1IrR0mdGbCL" class="menu-item">[Donate]</a>
+                <img src="./static/logo.svg"/>
+                <div id="menu" style="width: 200px;">
+                        <a href="#about" class="menu-item selected">[About]</a>
+                    <br><a href="#events" class="menu-item">[Events]</a>
+                    <br><a target="_blank" href="https://t.me/undefspace" class="menu-item">[Chat]</a>
+                    <br><a target="_blank" href="https://www.tinkoff.ru/sl/1IrR0mdGbCL" class="menu-item">[Donate]</a>
                 </div>
             </div>
-            
+
 
             <div class="contents">
 
                 <div class="content" id="content-about">
                     <p>
-                        hack/rev/makerspace <a href="geo:55.75397,37.652554" title="mowmow">in the middle of moscow</a> (Воронцово поле 5-7с8, подъезд 1)
+                        hack/rev/makerspace <a href="geo:55.75397,37.652554" target="_blank" title="mowmow">in the middle of moscow</a> (Воронцово поле 5-7с8, подъезд 1)
                     <br/>
 
                     <img src="./retro/glider.gif" style="width:45px;" />
@@ -122,15 +142,15 @@
 
                     </p>
                 </div>
-    
-    
+
+
                 <div class="content" id="content-events">
                     <p>
                         <h3>Friday, 20:00 | Routernaya</h3>
                         That's a technical ritual involving at least one sacrificial router and several technical specialists in multitude of fields, ranging from software verification to PCB designing.
                     </p>
                 </div>
-    
+
             </div>
 
         </div>
