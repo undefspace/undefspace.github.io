@@ -49,11 +49,11 @@
         }
 
         #menu {
-            margin-left: 60px;
+            margin-left: 10px;
             margin-top: 10px;
 
             font-family: monospace;
-            font-size: 24pt;
+            font-size: 20pt;
             text-align: left;
         }
 
@@ -101,9 +101,21 @@
             justify-content: center;
         }
 
+        #menu-logo {
+            rotate: 70deg;
+            width: 150px;
+        }
         @media (min-width: 768px) {
             .bar {
                 flex: 0 0 260px;
+            }
+            #menu {
+                margin-left: 60px;
+                font-size: 24pt;
+            }
+            #menu-logo {
+                rotate: 0deg;
+                width: 300px;
             }
         }
     </style>
@@ -214,8 +226,8 @@
     <div class="main">
 
         <div id="menu-container">
-            <img src="./static/logo.svg"/>
-            <div id="menu" style="width: 200px;">
+            <img src="./static/logo.svg" id="menu-logo"/>
+            <div id="menu">
                 <a href="#about" class="menu-item selected">[About]</a>
                 <br><a href="#events" class="menu-item">[Events]</a>
                 <br><a target="_blank" href="https://virtual.undef.club" class="menu-item" id="virtualspace">[virtual]</a>
