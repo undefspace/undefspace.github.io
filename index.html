@@ -129,14 +129,23 @@
         }
 
         #content-donate {
-            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .copy-container {
+            width: 200pt;
+            padding: 4pt;
+            margin: 4pt;
+            border: 2pt dashed#ff5555;
+            border-radius: 4pt;
         }
 
         .click-copy {
-            padding: 4pt;
             font-family: monospace;
-            border: 2pt dashed#ff5555;
-            border-radius: 4pt;
+            user-select: all;
+            overflow-wrap: break-word;
         }
 
         .click-copy:hover {
@@ -144,9 +153,6 @@
             color: #ff5555;
         }
 
-        .click-copy::before {
-            content: "📋";
-        }
     </style>
     <title>undefspace</title>
 
@@ -376,24 +382,36 @@
                 <p>
                 <h3><a target="_blank" href="https://www.tinkoff.ru/sl/1IrR0mdGbCL" class="menu-item">Tinkoff (click
                         me)</a></h3>
-                <h3>Cardano</h3>
-                <div class="click-copy">
-                    addr1qy7ufvyn60cgs2p6l3z3yex4z46a7ewn6c4n9dqxq8z90tfacjcf85ls3q5r4lz9zfjd29t4maja843tx26qvqwy27ksy9tknl
+                <div class="copy-container">
+                    <strong>Cardano</strong>
+                    <div class="click-copy">
+                        addr1qy7ufvyn60cgs2p6l3z3yex4z46a7ewn6c4n9dqxq8z90tfacjcf85ls3q5r4lz9zfjd29t4maja843tx26qvqwy27ksy9tknl
+                    </div>
                 </div>
-                <h3>Tezos</h3>
+                <div class="copy-container">
+
+                <strong>Tezos</strong>
                 <div class="click-copy">
                     tz1g2YioErNgYNKPkGA3s8NPidcdFHRtr8d3
                 </div>
-                <h3>Waves</h3>
+            </div>
+            <div class="copy-container">
+                <strong>Waves</strong>
                 <div class="click-copy">
                     3PKtYmxAeXdEHB4MzQh4UbANg3priANLDfB
                 </div>
-                <h3>Monero</h3>
+            </div>
+            <div class="copy-container">
+                <strong>Monero</strong>
                 <div class="click-copy">
                     46U3Feceyn6AdFddSR2d4gYjMt8g38ZS151KAVD9H2QSYaSdb6r2UE3SLhdNp2TXe3igWXFSTUmUGQaWTqf2WZP9EKLBY4m
                 </div>
-                <h3>Etherium/Polygon (and stuff on ERC20/MATIC)</h3>
-                <div class="click-copy">0x7fe38DDCEf7f58B2b4eaB6a2bECc3c252C083dB7</div>
+            </div>
+            <div class="copy-container">
+                <strong>Etherium/Polygon<br />(and stuff on ERC20/MATIC)</strong>
+                <div class="click-copy">0x7fe38DDCEf7f58B2b4eaB6a2bECc3c252C083dB7
+                </div>
+            </div>
             </div>
 
             <div class="content" id="content-rc3">
