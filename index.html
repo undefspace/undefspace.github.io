@@ -62,7 +62,10 @@
         }
 
         .content {
+            display: flex;
             text-align: center;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .contents {
@@ -168,7 +171,7 @@
                 return
             }
             [...document.getElementsByClassName("content")].forEach(element => {
-                element.hidden = element.id != id
+                element.style.display = element.id != id ? "none" : "flex";
             });
 
             [...document.getElementsByClassName("menu-item")].forEach(element => {
