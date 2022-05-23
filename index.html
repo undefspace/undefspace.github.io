@@ -185,16 +185,6 @@
             console.log("content-" + location.hash.substr(1))
         });
 
-        window.addEventListener('load', () => {
-            [...document.getElementsByClassName("click-copy")].forEach((el) => {
-                el.addEventListener("click", () => {
-                    console.log("mow")
-                    navigator.clipboard.writeText(el.textContent.trim())
-                    document.execCommand("copy");
-                })
-            })
-        })
-
         function start_spaceloop() {
 
             let targets = [
