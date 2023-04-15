@@ -8,6 +8,7 @@ GEO:55.75397,37.652554
 LOCATION:Воронцово поле 5-7с8, подъезд 1, код 21В
 RRULE:FREQ=WEEKLY
 SUMMARY:ЧаТТ
+DESCRIPTION:Группа людей, хакающих теоремы на Coq, зародившаяся из попыток прочитать книгу по HoTT.\nОбсуждения (и пробование) альтернативных доказаторов, болтовня о теориях групп, и пруфы-пруфы-пруфы.
 UID:20230405T161114Z-60993936-chatt@undef.club
 URL:https://undef.club/#events
 END:VEVENT
@@ -18,6 +19,7 @@ GEO:55.75397,37.652554
 LOCATION:Воронцово поле 5-7с8, подъезд 1, код 21В
 RRULE:FREQ=WEEKLY
 SUMMARY:Роутерная
+DESCRIPTION:Замещающий (или дополняющий!) пятничный бар, пятничный ивент.\nВ теории мы собираемся для того, чтобы прошивать роутеры, на практике мы болтаем о новых технологих и тыкаем микроконтроллеры.
 UID:20230405T164506Z-60993936-routers@undef.club
 URL:https://undef.club/#events
 END:VEVENT
@@ -28,6 +30,7 @@ GEO:55.75397,37.652554
 LOCATION:Воронцово поле 5-7с8, подъезд 1, код 21В
 RRULE:FREQ=WEEKLY
 SUMMARY:Коворкинговая
+DESCRIPTION:TODO
 UID:20230405T164825Z-60993936-coworking@undef.club
 URL:https://undef.club/#events
 END:VEVENT
