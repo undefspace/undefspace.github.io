@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Alice Carroll//caralice//EN
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Moscow:20230404T180000
+DTEND;TZID=Europe/Moscow:20230405T010000
+GEO:55.75397,37.652554
+LOCATION:Воронцово поле 5-7с8, подъезд 1, код 21В
+RRULE:FREQ=WEEKLY
+SUMMARY:ЧаТТ
+DESCRIPTION:Группа людей, хакающих теоремы на Coq, зародившаяся из попыток прочитать книгу по HoTT.\nОбсуждения (и пробование) альтернативных доказаторов, болтовня о теориях групп, и пруфы-пруфы-пруфы.
+UID:20230405T161114Z-60993936-chatt@undef.club
+URL:https://undef.club/#events
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Moscow:20230407T180000
+DTEND;TZID=Europe/Moscow:20230408T010000
+GEO:55.75397,37.652554
+LOCATION:Воронцово поле 5-7с8, подъезд 1, код 21В
+RRULE:FREQ=WEEKLY
+SUMMARY:Роутерная
+DESCRIPTION:Замещающий (или дополняющий!) пятничный бар, пятничный ивент.\nВ теории мы собираемся для того, чтобы прошивать роутеры, на практике мы болтаем о новых технологих и тыкаем микроконтроллеры.
+UID:20230405T164506Z-60993936-routers@undef.club
+URL:https://undef.club/#events
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Moscow:20230408T150000
+DTEND;TZID=Europe/Moscow:20230409T010000
+GEO:55.75397,37.652554
+LOCATION:Воронцово поле 5-7с8, подъезд 1, код 21В
+RRULE:FREQ=WEEKLY
+SUMMARY:Коворкинговая
+DESCRIPTION:Коворкаем: работаем каждый своё — работу/дела/проекты — по методу Помодоро: 25 минут ворк/5 не ворк (можно варьировать длину того и/или другого), с декларированием задач в начале и что сделано — в конце (кто хочет, но не обязательно)
+UID:20230405T164825Z-60993936-coworking@undef.club
+URL:https://undef.club/#events
+END:VEVENT
+END:VCALENDAR
