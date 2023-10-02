@@ -13,6 +13,17 @@ UID:20230405T161114Z-60993936-chatt@undef.club
 URL:https://undef.club/#events
 END:VEVENT
 BEGIN:VEVENT
+DTSTART;TZID=Europe/Moscow:20230921T180000
+DTEND;TZID=Europe/Moscow:20230922T010000
+GEO:55.75397,37.652554
+LOCATION:Воронцово поле 5-7с8, подъезд 1, код 21В
+RRULE:FREQ=WEEKLY
+SUMMARY:Микроконтроллерная
+DESCRIPTION:Программируем микроконтроллеры, вручную тыкаем память и периферийные регистры, подключаем интересное оборудование и отлаживаем без отладчика.
+UID:20231001T200107Z-106319181-microcontrollers@undef.club
+URL:https://undef.club/#events
+END:VEVENT
+BEGIN:VEVENT
 DTSTART;TZID=Europe/Moscow:20230407T180000
 DTEND;TZID=Europe/Moscow:20230408T010000
 GEO:55.75397,37.652554
